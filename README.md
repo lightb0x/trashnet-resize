@@ -12,7 +12,7 @@ RGB dataset is over 100 MB so you have to download from gdrive
 ```
 chmod +x ./download.sh ./check.sh
 ./download.sh rgb && ./check.sh rgb
-tar -zxvf dataset-resized.tar.gz
+tar -zxf dataset-resized.tar.gz
 ```
 
 ### greyscale dataset
@@ -20,13 +20,13 @@ just download and
 ```
 chmod +x ./check.sh
 ./check.sh greyscale
-tar -zxvf dataset-resized-greyscale.tar.gz
+tar -zxf dataset-resized-greyscale.tar.gz
 ```
 
 or you can download from gdrive
 ```
 chmod +x ./download.sh ./check.sh
 ./download.sh greyscale && ./check.sh greyscale
-tar -zxvf dataset-resized-greyscale.tar.gz
+tar -zxf dataset-resized-greyscale.tar.gz
 ```
 
