@@ -4,7 +4,7 @@ from [garythung/trashnet](https://github.com/garythung/trashnet)
 ## diff from original
 * resized from (512, 384) to (256, 192)
 * `resize.py` updated to use `PIL` and `python-resize-image` instead of `scipy`
-* additional greyscale dataset
+* additional grayscale dataset
 
 ## usage
 ### RGB dataset
@@ -15,18 +15,18 @@ chmod +x ./download.sh ./check.sh
 tar -zxf dataset-resized.tar.gz
 ```
 
-### greyscale dataset
+### grayscale dataset
 just download and
 ```
 chmod +x ./check.sh
-./check.sh greyscale
-tar -zxf dataset-resized-greyscale.tar.gz
+./check.sh grayscale
+tar -zxf dataset-resized-grayscale.tar.gz
 ```
 
 or you can download from gdrive
 ```
 chmod +x ./download.sh ./check.sh
-./download.sh greyscale && ./check.sh greyscale
-tar -zxf dataset-resized-greyscale.tar.gz
+./download.sh grayscale && ./check.sh grayscale
+tar -zxf dataset-resized-grayscale.tar.gz
 ```
 

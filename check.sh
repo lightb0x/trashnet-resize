@@ -4,10 +4,14 @@ if [ $variant = "rgb" ]
 then
 	FILENAME="dataset-resized.tar.gz"
 	chk="^2fdb8ef776193b40000e997b55241a73*"
-elif [ $variant = "greyscale" ]
+elif [ $variant = "rgb-s" ]
+	FILENAME="dataset-resized-s.tar.gz"
+	chk="^37caab59f46ef86454547e53a1378f10*"
 then
-	FILENAME="dataset-resized-greyscale.tar.gz"
-	chk="^eac21aaa3235babaa267b283462bacfa*"
+elif [ $variant = "grayscale" ]
+then
+	FILENAME="dataset-resized-grayscale.tar.gz"
+	chk="^ebfebc468ebfec4ab2973102d507127a*"
 else
 	echo "not available."
 	exit 1
