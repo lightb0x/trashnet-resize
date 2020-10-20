@@ -5,9 +5,9 @@ then
 	FILENAME="dataset-resized.tar.gz"
 	chk="^2fdb8ef776193b40000e997b55241a73*"
 elif [ $variant = "rgb-s" ]
+then
 	FILENAME="dataset-resized-s.tar.gz"
 	chk="^37caab59f46ef86454547e53a1378f10*"
-then
 elif [ $variant = "grayscale" ]
 then
 	FILENAME="dataset-resized-grayscale.tar.gz"
