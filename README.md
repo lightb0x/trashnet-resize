@@ -30,7 +30,7 @@ chmod +x ./download.sh ./check.sh
 tar -zxf dataset-resized-grayscale.tar.gz
 ```
 
-### RGB smaller dataset
+### RGB smaller(more compression) dataset
 just download and
 ```
 chmod +x ./check.sh
