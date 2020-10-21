@@ -69,7 +69,7 @@ tar -zxf dataset-resized-grayscale.tar.gz
 ```
 
 ### grayscale smaller dataset
-`PIL.Image.save(subsampling=2)`
+`PIL.Image.save() # quality=75 as default`
 
 just download and
 ```
