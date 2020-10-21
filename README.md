@@ -8,6 +8,8 @@ from [garythung/trashnet](https://github.com/garythung/trashnet)
 
 ## usage
 ### RGB dataset
+`PIL.Image.save(quality=100, subsampling=0)`
+
 RGB dataset is over 100 MB so you have to download from gdrive
 ```
 chmod +x ./download.sh ./check.sh
@@ -15,7 +17,43 @@ chmod +x ./download.sh ./check.sh
 tar -zxf dataset-resized.tar.gz
 ```
 
+### RGB smaller(more compression) dataset
+`PIL.Image.save(quality=100, subsampling=-1)`
+
+just download and
+```
+chmod +x ./check.sh
+./check.sh rgb-s
+tar -zxf dataset-resized-s.tar.gz
+```
+
+or you can download from gdrive
+```
+chmod +x ./download.sh ./check.sh
+./download.sh rgb-s && ./check.sh rgb-s
+tar -zxf dataset-resized-s.tar.gz
+```
+
+### RGB smaller smaller (more compression) dataset
+`PIL.Image.save(quality='keep', subsampling=-1)`
+
+just download and
+```
+chmod +x ./check.sh
+./check.sh rgb-ss
+tar -zxf dataset-resized-ss.tar.gz
+```
+
+or you can download from gdrive
+```
+chmod +x ./download.sh ./check.sh
+./download.sh rgb-ss && ./check.sh rgb-ss
+tar -zxf dataset-resized-ss.tar.gz
+```
+
 ### grayscale dataset
+`PIL.Image.save(quality=100)`
+
 just download and
 ```
 chmod +x ./check.sh
@@ -30,18 +68,19 @@ chmod +x ./download.sh ./check.sh
 tar -zxf dataset-resized-grayscale.tar.gz
 ```
 
-### RGB smaller(more compression) dataset
+### grayscale smaller dataset
+`PIL.Image.save(subsampling=2)`
+
 just download and
 ```
 chmod +x ./check.sh
-./check.sh rgb-s
-tar -zxf dataset-resized-s.tar.gz
+./check.sh grayscale-s
+tar -zxf dataset-resized-grayscale-s.tar.gz
 ```
 
 or you can download from gdrive
 ```
 chmod +x ./download.sh ./check.sh
-./download.sh rgb-s && ./check.sh rgb-s
-tar -zxf dataset-resized-s.tar.gz
-```
+./download.sh grayscale-s && ./check.sh grayscale-s
+tar -zxf dataset-resized-grayscale-s.tar.gz
 

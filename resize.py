@@ -28,8 +28,10 @@ def fileWalk(directory, destPath):
 
 			# subsampling=0 for less lossy compression
 			# subsampling=-1 to reduce file size
+			# subsampling=2 on grayscale output
 			# (grayscale output size is not affected by subsampling)
-			pic.save(os.path.join(destPath, file), quality=100, subsampling=-1)
+			# quality='keep' for RGB optimized
+			pic.save(os.path.join(destPath, file), subsampling=2)
 		
 
 def main():
@@ -42,7 +44,7 @@ def main():
 	trashDir = os.path.join(prepath, 'trash')
 
 	# destination folder name
-	destPath = os.path.join(os.getcwd(), 'dataset-resized-s')
+	destPath = os.path.join(os.getcwd(), 'dataset-resized-grayscale-s')
 	try: 
 		os.makedirs(destPath)
 	except OSError:
