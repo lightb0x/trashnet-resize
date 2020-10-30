@@ -12,6 +12,10 @@ elif [ $variant = "rgb-ss" ]
 then
 	FILENAME="dataset-resized-ss.tar.gz"
 	chk="^88f8a050a52a7283fff8080b234c15da*"
+elif [ $variant = "rgb-96" ]
+then
+	FILENAME="dataset-resized-rgb-96.tar.gz"
+	chk="^9a6c7e3e461a098b4f77927d17835d2d*"
 elif [ $variant = "grayscale" ]
 then
 	FILENAME="dataset-resized-grayscale.tar.gz"
@@ -20,6 +24,10 @@ elif [ $variant = "grayscale-s" ]
 then
 	FILENAME="dataset-resized-grayscale-s.tar.gz"
 	chk="^8a14b9c647e1b00709920108a4278951*"
+elif [ $variant = "grayscale-96" ]
+then
+	FILENAME="dataset-resized-grayscale-96.tar.gz"
+	chk="^33d254ddc7bb3a9c081add40710fdf93*"
 else
 	echo "not available."
 	exit 1

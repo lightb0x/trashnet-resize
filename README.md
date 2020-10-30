@@ -6,6 +6,10 @@ from [garythung/trashnet](https://github.com/garythung/trashnet)
 * `resize.py` updated to use `PIL` and `python-resize-image` instead of `scipy`
 * additional grayscale dataset
 
+NOTE : `quality` factor doesn't seem to differentiate while training.
+
+just stick to `quality=keep`
+
 ## usage
 ### RGB dataset
 `PIL.Image.save(quality=100, subsampling=0)`
@@ -83,4 +87,9 @@ or you can download from gdrive
 chmod +x ./download.sh ./check.sh
 ./download.sh grayscale-s && ./check.sh grayscale-s
 tar -zxf dataset-resized-grayscale-s.tar.gz
+
+### also supports
+* rgb-96
+* grayscale-96
+(resized to 96 * 96, cropping sides)
 

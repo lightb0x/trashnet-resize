@@ -9,12 +9,18 @@ then
 elif [ $variant = "rgb-ss" ]
 then
 	gID="1paONIJ1MntvY2LI1SBDAJ9eXXpx9r1A8"
+elif [ $variant = "rgb-96" ]
+then
+	gID="1FdfBqxCnzkwIZDmCqkG_LdwRQT0FczBO"
 elif [ $variant = "grayscale" ]
 then
 	gID="1pM3HuOmdOBIHV0XhpkFU3gxK8ZIkgZ1n"
 elif [ $variant = "grayscale-s" ]
 then
 	gID="1v3DYyLzUFucSfdG6TwpHy7vFiJuU37nP"
+elif [ $variant = "grayscale-96" ]
+then
+	gID="1QZfbycgeOs3Mt1BbSKN60D0cTN_hhZIP"
 else
 	echo "not available."
 	exit 1
