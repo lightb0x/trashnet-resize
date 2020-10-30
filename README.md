@@ -87,6 +87,7 @@ or you can download from gdrive
 chmod +x ./download.sh ./check.sh
 ./download.sh grayscale-s && ./check.sh grayscale-s
 tar -zxf dataset-resized-grayscale-s.tar.gz
+```
 
 ### also supports
 #### 96 * 96 resolution, cropping sides
