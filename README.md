@@ -6,9 +6,9 @@ from [garythung/trashnet](https://github.com/garythung/trashnet)
 * `resize.py` updated to use `PIL` and `python-resize-image` instead of `scipy`
 * additional grayscale dataset
 
-NOTE : `quality` factor doesn't seem to differentiate while training.
+*NOTE : `quality` factor doesn't seem to differentiate while training.*
 
-just stick to `quality=keep`
+*just stick to `quality=keep`*
 
 ## usage
 ### RGB dataset
@@ -90,6 +90,8 @@ tar -zxf dataset-resized-grayscale-s.tar.gz
 ```
 
 ### also supports
+`quality=keep` for rgb, `quality=75` for grayscale
+
 #### 96 * 96 resolution, cropping sides
 * rgb-96
 * grayscale-96
