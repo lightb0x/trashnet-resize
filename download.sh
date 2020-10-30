@@ -9,6 +9,9 @@ then
 elif [ $variant = "rgb-ss" ]
 then
 	gID="1paONIJ1MntvY2LI1SBDAJ9eXXpx9r1A8"
+elif [ $variant = "rgb-112" ]
+then
+	gID="1-MTqABJqi6l1lmy_FZm0bpi59aRfSERu"
 elif [ $variant = "rgb-96" ]
 then
 	gID="1FdfBqxCnzkwIZDmCqkG_LdwRQT0FczBO"
@@ -18,6 +21,9 @@ then
 elif [ $variant = "grayscale-s" ]
 then
 	gID="1v3DYyLzUFucSfdG6TwpHy7vFiJuU37nP"
+elif [ $variant = "grayscale-112" ]
+then
+	gID="1EWBjrxqBuoCZLjMWSrvHrtzrCfwiKsEk"
 elif [ $variant = "grayscale-96" ]
 then
 	gID="1QZfbycgeOs3Mt1BbSKN60D0cTN_hhZIP"

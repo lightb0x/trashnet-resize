@@ -89,7 +89,11 @@ chmod +x ./download.sh ./check.sh
 tar -zxf dataset-resized-grayscale-s.tar.gz
 
 ### also supports
+#### 96 * 96 resolution, cropping sides
 * rgb-96
 * grayscale-96
-(resized to 96 * 96, cropping sides)
+
+#### 112 * 84 resolution
+* rgb-112
+* grayscale-112
 
