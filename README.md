@@ -100,3 +100,7 @@ tar -zxf dataset-resized-grayscale-s.tar.gz
 * rgb-112
 * grayscale-112
 
+#### 64 * 64 resolution
+* rgb-64
+* grayscale-64
+

@@ -22,7 +22,7 @@ def fileWalk(directory, destPath):
 				pic = pic.rotate(angle=90)
 
 			# comment out next line to get RGB
-			#pic = pic.convert("L")
+			pic = pic.convert("L")
 
 			pic = resizeimage.resize_cover(pic, [constants.DIM2, constants.DIM1])
 
@@ -31,7 +31,7 @@ def fileWalk(directory, destPath):
 			# subsampling=2 on grayscale output
 			# (grayscale output size is not affected by subsampling)
 			# quality='keep' for RGB optimized
-			pic.save(os.path.join(destPath, file), quality='keep')
+			pic.save(os.path.join(destPath, file))
 		
 
 def main():
@@ -44,7 +44,7 @@ def main():
 	trashDir = os.path.join(prepath, 'trash')
 
 	# destination folder name
-	destPath = os.path.join(os.getcwd(), 'dataset-resized-rgb-96')
+	destPath = os.path.join(os.getcwd(), 'dataset-resized-grayscale-64')
 	try: 
 		os.makedirs(destPath)
 	except OSError:
