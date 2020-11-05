@@ -9,6 +9,9 @@ then
 elif [ $variant = "rgb-ss" ]
 then
 	gID="1paONIJ1MntvY2LI1SBDAJ9eXXpx9r1A8"
+elif [ $variant = "rgb-128" ]
+then
+	gID="1Cv2CFVJhc3SweKNYlK4HrFayopIWGyuU"
 elif [ $variant = "rgb-112" ]
 then
 	gID="1-MTqABJqi6l1lmy_FZm0bpi59aRfSERu"

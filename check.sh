@@ -12,6 +12,10 @@ elif [ $variant = "rgb-ss" ]
 then
 	FILENAME="dataset-resized-ss.tar.gz"
 	chk="^88f8a050a52a7283fff8080b234c15da*"
+elif [ $variant = "rgb-128" ]
+then
+	FILENAME="dataset-resized-rgb-128.tar.gz"
+	chk="^8668ec2576df20aa4ebd193db5a35a56*"
 elif [ $variant = "rgb-112" ]
 then
 	FILENAME="dataset-resized-rgb-112.tar.gz"

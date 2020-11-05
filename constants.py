@@ -5,6 +5,6 @@ PLASTIC = 3
 METAL = 4
 TRASH = 5
 
-DIM1 = 64
-DIM2 = 64
+DIM1 = 128
+DIM2 = 128
 
