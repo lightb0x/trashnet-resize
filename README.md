@@ -90,6 +90,20 @@ tar -zxf dataset-resized-grayscale-s.tar.gz
 ```
 
 ### also supports
+resize using `PIL.Image.resize`, `PIL.Image.crop`
+
+#### 128 * 128 resolution, cropping sides
+* rgb-png128
+* rgb-alt128
+
+#### 96 * 96 resolution, cropping sides
+* rgb-png96
+* rgb-alt96
+
+#### 64 * 64 resolution, cropping sides
+* rgb-png64
+* rgb-alt64
+
 `quality=keep` for rgb, `quality=75` for grayscale
 
 #### 128 * 128 resolution, cropping sides
