@@ -7,7 +7,10 @@ from [garythung/trashnet](https://github.com/garythung/trashnet)
 * additional grayscale dataset
 
 *NOTE : stick to `png` whenever and wherever possible. `jpeg` resizing degrades image quality quite badly.*
+
+
 *NOTE : `quality` factor doesn't seem to differentiate while training.*
+
 
 *just stick to `quality=keep`*
 
