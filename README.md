@@ -6,6 +6,7 @@ from [garythung/trashnet](https://github.com/garythung/trashnet)
 * `resize.py` updated to use `PIL` and `python-resize-image` instead of `scipy`
 * additional grayscale dataset
 
+*NOTE : stick to `png` whenever and wherever possible. `jpeg` resizing degrades image quality quite badly.*
 *NOTE : `quality` factor doesn't seem to differentiate while training.*
 
 *just stick to `quality=keep`*
@@ -103,6 +104,10 @@ resize using `PIL.Image.resize`, `PIL.Image.crop`
 #### 64 * 64 resolution, cropping sides
 * rgb-png64
 * rgb-alt64
+
+#### 48 * 48 resolution, cropping sides
+* grayscale-png64
+
 
 `quality=keep` for rgb, `quality=75` for grayscale
 

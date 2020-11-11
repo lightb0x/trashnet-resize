@@ -54,6 +54,9 @@ then
 elif [ $variant = "grayscale-64" ]
 then
 	gID="1i5-XzY_8SjimBPjAJNURTnLSj7IMWjwN"
+elif [ $variant = "grayscale-png48" ]
+then
+	gID="1ZCnRaUX0dcbZC5BDesyPhggrodDHW9HG"
 else
 	echo "not available."
 	exit 1

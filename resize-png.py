@@ -24,7 +24,12 @@ def fileWalk(directory, destPath):
 
 			w, h = pic.size
 			off = w / 6
+
+      # grayscale
+			pic = pic.convert("L")
+
 			pic = pic.crop((off, 0, h + off, h)).resize((constants.DIM2, constants.DIM1), resample=Image.ANTIALIAS)
+
 
 			filename = os.path.splitext(file)[0]
 			pic.save(os.path.join(destPath, filename + '.png'))
@@ -39,7 +44,7 @@ def main():
 	trashDir = os.path.join(prepath, 'trash')
 
 	# destination folder name
-	destPath = os.path.join(os.getcwd(), 'dataset-resized-rgb-png128')
+	destPath = os.path.join(os.getcwd(), 'dataset-resized-grayscale-png48_')
 	try: 
 		os.makedirs(destPath)
 	except OSError:

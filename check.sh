@@ -72,6 +72,10 @@ elif [ $variant = "grayscale-64" ]
 then
 	FILENAME="dataset-resized-grayscale-64.tar.gz"
 	chk="^2eabd336f8e25860281cfd83d90d13cc*"
+elif [ $variant = "grayscale-png48" ]
+then
+	FILENAME="dataset-resized-grayscale-png48.tar.gz"
+	chk="^71b0fa641d8141ba69f3a9ff0f93afed*"
 else
 	echo "not available."
 	exit 1
