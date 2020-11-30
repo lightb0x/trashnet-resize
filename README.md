@@ -1,4 +1,10 @@
 # trash dataset resized to (256, 192)
+*DEPRECATED*
+
+all squared dataset is a bit off from exact center of original dataset.
+
+visit [lightb0x/resized_trashnet](https://github.com/lightb0x/resized_trashnet) for concise and fixed version of this.
+
 from [garythung/trashnet](https://github.com/garythung/trashnet)
 
 ## diff from original
